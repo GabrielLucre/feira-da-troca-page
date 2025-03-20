@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import CryptoJS from "crypto-js";
+import { useEffect, useState } from "react";
 import QRCode from "react-qr-code";
 import Tilt from 'react-vanilla-tilt';
 import styled from 'styled-components';
@@ -107,7 +107,7 @@ const Comanda = () => {
             <p style={{ marginTop: "20px" }} >{storedUser ? storedUser.id : "F000"}</p>
             <ComandaImage>
               <QRCode
-                value="http://localhost:5174"
+                value="https://criptoetec.web.app/"
                 size={168}
                 style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                 viewBox={`0 0 256 256`}

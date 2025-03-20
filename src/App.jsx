@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import { useState, useEffect } from "react";
-import { GlobalStyles } from "./styles/GlobalStyles";
-import { lightTheme, darkTheme } from "./styles/Themes";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import { GlobalStyles } from "./styles/GlobalStyles";
+import { darkTheme, lightTheme } from "./styles/Themes";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -17,12 +17,12 @@ const App = () => {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
 
     if (savedTheme) {
       setTheme(savedTheme);
-    } else if (prefersDark) {
-      setTheme("dark");
+    } else if (prefersLight) {
+      setTheme("light");
     }
   }, []);
 
