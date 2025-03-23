@@ -1,8 +1,3 @@
-# React + Vite
+## O que é "Feira da Troca"?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Feira da Troca é um projeto anual, localizado em *Taquarituba SP,* especificamente na ***ETEC Profª Terezinha Monteiro dos Santos***, com o intuito de **ensinar a ser sustentável**. Sendo a realização de troca de itens que você já não vê mais utilidade para você, mas que pode haver para outra pessoa.
